@@ -11,3 +11,10 @@
 <p>
     <%= @post.body %>
 </p>
+
+<p>
+<%= @post.comments.count %> comments
+<%= render @post.comments %>
+Join Discussion:
+<%= render "comments/form" %>
+</p>
